@@ -43,6 +43,10 @@ public class PlayerController : MonoBehaviour
 
         // 플레이어 속도에 맞춰 애니메이션 속도를 바꾼다.
         this.animator.speed = speedx / maxWalkSpeed;
-        ;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("골");    
     }
 }
